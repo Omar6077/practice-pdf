@@ -19,6 +19,19 @@
     </div>
   </header>
 
+  <main class="page-shell">
+    <noscript>
+      <div class="notice error">JavaScript must be enabled for this tool to work.</div>
+    </noscript>
+
+    <section class="privacy-banner" aria-label="Privacy information">
+      <span class="privacy-icon" aria-hidden="true">✓</span>
+      <div>
+        <strong>Your PDF stays on this device.</strong>
+        Processing happens inside the browser. The selected file is not uploaded to this website or GitHub.
+      </div>
+    </section>
+
     <form id="bookletForm" class="app-grid">
       <section class="card main-card">
         <div class="card-heading">
@@ -117,14 +130,14 @@
               <small>Question and lined page face each other. Print the finished PDF using your PDF reader’s <b>Booklet</b> setting.</small>
             </span>
           </label>
-<!--          <label class="radio-card">
+          <label class="radio-card">
             <input type="radio" name="pairing" value="duplex">
             <span>
               <strong>Normal double-sided sheets</strong>
               <small>Question and lined page print on the front and back of the same sheet.</small>
             </span>
           </label>
-        </fieldset>    --->
+        </fieldset>
 
         <label class="check-row final-option">
           <input id="padFour" type="checkbox" checked>
@@ -149,7 +162,12 @@
               <dt>Estimated output</dt>
               <dd id="outputPages">—</dd>
             </div>
-            
+            <div>
+              <dt>Processing</dt>
+              <dd>On this device</dd>
+            </div>
+          </dl>
+
           <label class="field output-name-field">
             <span>Download filename</span>
             <div class="filename-input">
@@ -186,7 +204,7 @@
   </main>
 
   <footer>
-    <p>Practice PDF Booklet Maker. By Omar</p>
+    <p>Practice PDF Booklet Maker · No account, installation or server upload required.</p>
   </footer>
 
   <script src="app.js" defer></script>
